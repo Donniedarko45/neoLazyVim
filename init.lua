@@ -13,18 +13,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
     vim.cmd("hi! NonText guibg=NONE ctermbg=NONE")
   end,
 })
-
 vim.cmd([[
   highlight StatusLine guibg=none
 ]])
 
 vim.o.number = true
 vim.opt.guicursor = ""
-
-require("solarized-osaka").setup({
-  transparent = true, -- Enables transparency
-  styles = {
-    sidebars = "transparent", -- Makes sidebars transparent
-    floats = "dark", -- Makes floating windows transparent
-  },
-})

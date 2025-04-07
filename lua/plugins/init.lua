@@ -7,4 +7,13 @@ return {
       floats = "transparent",
     },
   },
+
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    version = "v2.0.0",
+    enabled = false,
+    config = function()
+      require("render-markdown").setup({})
+    end,
+  },
 }

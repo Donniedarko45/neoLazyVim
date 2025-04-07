@@ -7,7 +7,7 @@ return {
     },
     sections = {
       lualine_c = {
-        { "filename", color = { bg = "none" } },
+        { "filename" },
       },
     },
   },
