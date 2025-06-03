@@ -1,5 +1,5 @@
 return {
-  "craftzdog/solarized-osaka.nvim",
+  "folke/tokyonight.nvim",
   opts = {
     transparent = true, -- Enable transparency
     styles = {

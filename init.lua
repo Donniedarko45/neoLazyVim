@@ -19,3 +19,17 @@ vim.cmd([[
 
 vim.o.number = true
 vim.opt.guicursor = ""
+
+vim.api.nvim_create_autocmd("SwapExists", {
+  callback = function(args)
+    -- Automatically recover the swap file
+    vim.v.swapchoice = "r"
+  end,
+})
+
+vim.api.nvim_create_autocmd("SwapExists", {
+  callback = function(args)
+    print("Swap file found, auto-recovering: " .. args.file)
+    vim.v.swapchoice = "r"
+  end,
+})
