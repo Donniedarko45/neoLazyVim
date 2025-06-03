@@ -16,4 +16,25 @@ return {
       require("render-markdown").setup({})
     end,
   },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        lua = { "stylua" },
+        typescript = { "prettier" }, -- Or perhaps {"tsserver"}
+        javascript = { "prettier" }, -- Or perhaps {"tsserver"}
+        typescriptreact = { "prettier", "eslint_d" }, -- Or it could be {"tsserver"}
+        javascriptreact = { "prettier", "eslint_d" }, -- Or it could be {"tsserver"}
+        -- ... other filetypes
+      },
+      -- If tsserver is used directly by conform:
+      formatters = {
+        tsserver = {
+          lsp_fallback = true, -- Indicates it will use LSP formatting
+          -- Any specific args or config for tsserver via conform might go here,
+          -- but the problematic function is more likely in the nvim-lspconfig setup.
+        },
+      },
+    },
+  },
 }
