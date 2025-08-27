@@ -25,6 +25,10 @@ return {
         javascript = { "prettier" }, -- Or perhaps {"tsserver"}
         typescriptreact = { "prettier", "eslint_d" }, -- Or it could be {"tsserver"}
         javascriptreact = { "prettier", "eslint_d" }, -- Or it could be {"tsserver"}
+        c = { "clang_format" },
+        cpp = { "clang_format" },
+        dockerfile = { "hadolint" },
+        prisma = { "prismaFmt" },
         -- ... other filetypes
       },
       -- If tsserver is used directly by conform:
@@ -33,6 +37,16 @@ return {
           lsp_fallback = true, -- Indicates it will use LSP formatting
           -- Any specific args or config for tsserver via conform might go here,
           -- but the problematic function is more likely in the nvim-lspconfig setup.
+        },
+        prismaFmt = {
+          command = "prisma",
+          args = { "format", "--schema", "$FILENAME" },
+          stdin = false,
+        },
+        hadolint = {
+          command = "hadolint",
+          args = { "--no-color", "-" },
+          stdin = true,
         },
       },
     },
