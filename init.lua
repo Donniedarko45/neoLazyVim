@@ -63,4 +63,5 @@ vim.api.nvim_create_autocmd("SwapExists", {
   transparent_mode = false,
 })
   ]]
-vim.cmd("colorscheme tokyonight")
+
+vim.cmd("colorscheme solarized-osaka")
