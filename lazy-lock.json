@@ -49,6 +49,7 @@
   "project.nvim": { "branch": "main", "commit": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" },
   "refactoring.nvim": { "branch": "master", "commit": "6784b54587e6d8a6b9ea199318512170ffb9e418" },
   "render-markdown.nvim": { "branch": "main", "commit": "d2285137fa4fbc0b4152cb444008166962b727b5" },
+  "rose-pine": { "branch": "main", "commit": "ff483051a47e27d84bdef47703538df1ed9f4a47" },
   "smear-cursor.nvim": { "branch": "main", "commit": "c85bdbb25db096fbcf616bc4e1357bd61fe2c199" },
   "snacks.nvim": { "branch": "main", "commit": "3893cca2b290946d7fff8f0f98855060df06297d" },
   "solarized-osaka.nvim": { "branch": "main", "commit": "f0c2f0ba0bd56108d53c9bfae4bb28ff6c67bbdb" },
